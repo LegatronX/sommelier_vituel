@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assistant Sommelier – Domaine Lafage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f6f1;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+
+    nav a {
+      color: #d4af37;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .vin-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .vin-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .vin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .vin-img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .chatbox {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    .chatbox textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    .chatbox button {
+      margin-top: 0.5rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #d4af37;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Domaine Lafage</h1>
+    <nav>
+      <a href="#vins">Nos vins</a>
+      <a href="#accords">Accords mets-vins</a>
+      <a href="#sommelier">Sommelier IA</a>
+    </nav>
+  </header>
+
+  <section id="vins">
+    <h2>Nos cuvées</h2>
+    <div class="vin-grid">
+      <div class="vin-card">
+        <img src="https://example.com/images/nicolas-rouge.png" alt="Cuvée Nicolas" class="vin-img"/>
+        <h3>Nicolas</h3>
+        <p>Rouge | IGP Côtes Catalanes</p>
+        <p>100% Grenache Vieilles Vignes</p>
+      </div>
+      <div class="vin-card">
+        <img src="https://example.com/images/centenaire-blanc.png" alt="Centenaire" class="vin-img"/>
+        <h3>Centenaire</h3>
+        <p>Blanc | AOP Côtes du Roussillon</p>
+        <p>Grenache Blanc, Roussanne</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="accords">
+    <h2>Accords mets et vins</h2>
+    <p>Découvrez quel vin s’accorde le mieux avec vos plats.</p>
+    <div class="chatbox">
+      <textarea rows="3" placeholder="Quel vin avec un magret de canard ?"></textarea>
+      <button>Demander au sommelier</button>
+    </div>
+  </section>
+
+  <section id="sommelier">
+    <h2>Votre sommelier personnel</h2>
+    <p>Posez-lui toutes vos questions sur nos cuvées, les cépages, ou les méthodes de vinification.</p>
+    <div class="chatbox">
+      <textarea rows="3" placeholder="Quelle est la température idéale pour servir la cuvée Nicolas ?"></textarea>
+      <button>Poser la question</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Domaine Lafage – Assistant sommelier IA développé par Christian Rolando
+  </footer>
+</body>
+</html>
